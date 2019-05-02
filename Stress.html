@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Stress- Going Light</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+		 <link rel="stylesheet" href="test.css">
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body class="is-preload">
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i style="font-size:24px" class="fa">&#xf0aa;</i></button>
+
+				<script>
+				// When the user scrolls down 20px from the top of the document, show the button
+				window.onscroll = function() {scrollFunction()};
+
+				function scrollFunction() {
+				  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				    document.getElementById("myBtn").style.display = "block";
+				  } else {
+				    document.getElementById("myBtn").style.display = "none";
+				  }
+				}
+
+				// When the user clicks on the button, scroll to the top of the document
+				function topFunction() {
+				  document.body.scrollTop = 0;
+				  document.documentElement.scrollTop = 0;
+				}
+				</script>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Breking the Silence</strong> <span>by Going Light</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="Specialists.html">Specialists</a></li>
+<li><a href="motivational.html">Motivation</a></li>
+
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<div class="tab">
+						  <button class="tablinks" onclick="openAnxiety(event, 'About')">About anxiety</button>
+						  <button class="tablinks" onclick="openAnxiety(event, 'Cause')">Causes</button>
+						  <button class="tablinks" onclick="openAnxiety(event, 'Option')">Treatment options</button>
+						  <button class="tablinks" onclick="openAnxiety(event, 'Friends')">Advices for friends &amp; family</button>
+						</div>
+
+						<div id="About" class="tabcontent">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Stress</h1>
+									</header>
+									<span class="image main"><img src="http://www.whitsundayprofessionalcounselling.com/wp-content/uploads/2014/10/image-depressed.jpg" alt="" /></span>
+									<p>In a medical or biological context stress is a physical, mental, or emotional factor that causes bodily or mental tension. Stresses can be external (from the environment, psychological, or social situations) or internal (illness, or from a medical procedure). Stress can initiate the "fight or flight" response, a complex reaction of neurologic and endocrinologic systems.</p>
+									<p>In a recent global survey of 1,000 corporations across 15 countries, commissioned by The Regus Group it was found that the levels of workplace stress have risen over the last two years. The survey found 6 in 10 workers in significant global economies experienced increased workplace stress.
+                  The survey found that China (86%) had the highest rise in workplace stress. While those workers in larger companies worldwide (over 1000 workers and more) were nearly twice as likely to suffer from stress. These heightened stress levels were costing world economies billions of dollars in lost productivity and health related problems. One of the most important aspects to reducing the stress levels of employees was in assisting them to develop a healthy work-life balance.</p>
+                  <h2>Facts</h2>
+						      <li>Stress is a normal part of life that can either help us learn and grow or can cause us significant problems.</li>
+                  <li>Stress releases powerful neurochemicals and hormones that prepare us for action (to fight or flee).</li>
+                  <li>Prolonged, uninterrupted, unexpected, and unmanageable stresses are the most damaging.</li>
+                  <li>Risk factors for unmanageable stress include a lack of adequate social support.</li>
+                  <li>Frequent stress decreases an individuals immune system</li>
+								</div>
+							</section>
+							</div>
+
+							<div id="Cause" class="tabcontent">
+								<header class="showcase">
+									<ol>
+									<li>Environmental factors: </li>
+									<p> Elements in the environment around an individual can increase anxiety.
+										Stress from a personal relationship, job, school, or financial predicament can
+										contribute greatly to anxiety disorders. Even low oxygen levels in high-altitude
+										 areas can add to anxiety symptoms.
+									</p>
+									<li>Genetics: </li>
+									<p>People who have family members with an anxiety disorder are more likely to have one themselves.
+									</p>
+									<li>Medical factors: </li>
+									<p>Other medical conditions can lead to an anxiety disorder,
+										such as the side effects of medication, symptoms of a disease,
+										or stress from a serious underlying medical condition that may not directly trigger
+										the changes seen in anxiety disorder but might be causing significant lifestyle adjustments,
+										pain, or restricted movement.
+									</p>
+									<li>Brain chemistry:  </li>
+									<p>Stressful or traumatic experiences and genetic factors can alter brain structure
+										and function to react more vigorously to triggers that would not previously have caused anxiety.
+										Psychologists and neurologists define many anxiety and mood disorders as disruptions to hormones
+										and electrical signals in the brain.
+									</p>
+									<li>Use of or withdrawal from an illicit substance:  </li>
+									<p>The stress of day-to-day living combined with any of the above
+										 might serve as key contributors to an anxiety disorder.
+									</p>
+								</ol>
+								</header>
+							</div>
+
+					</div>
+
+					<script>
+					function openAnxiety(evt, anxietyContent) {
+						var i, tabcontent, tablinks;
+						tabcontent = document.getElementsByClassName("tabcontent");
+						for (i = 0; i < tabcontent.length; i++) {
+							tabcontent[i].style.display = "none";
+						}
+						tablinks = document.getElementsByClassName("tablinks");
+						for (i = 0; i < tablinks.length; i++) {
+							tablinks[i].className = tablinks[i].className.replace(" active", "");
+						}
+						document.getElementById(anxietyContent).style.display = "block";
+						evt.currentTarget.className += " active";
+					}
+					</script>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<a href="Specialists.html" class="button">Get immediate Help</a>
+								<button style="margin-left:25px; margin-top:30px;"><a href="stressQuizinfo.html">Test Yourself</a></button>
+							<a href="motivational1.html" class="button">Get Motivation</a>
+
+								<ul style=" text-align: center">
+								<li style="margin-top: 100px">If you are in a critical situation please do click on the Get Immediate Help Button to find solutions and treatments.</li>
+							<li style=" text-align: center">If you are uncertain on whether you are suffering from mental illness or not click on the Test Yourself Button to Find out!</li>
+								<li style=" text-align: center">Feeling really empty and unsatisfied? click on the Get Motivation Button to receive a dose of inspiration from verses in the Quran and videos to help you out.</li>
+							</ul>
+
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">goinglight@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(060) 13-455-78-78</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-home"></span>
+										<h3>Address</h3>
+										<span>IIUM, Jalan Gombak<br />
+										Selangor, 53100<br />
+										Kuala-Lumpur, Malaysia</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://goinglight.com">Going Light</a></li>
+							</ul>
+						</div>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

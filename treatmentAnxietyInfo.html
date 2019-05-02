@@ -1,0 +1,228 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Treatment of anxiety</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .showcase{
+    grid-area: showcase;
+    min-height: 400px;
+    background-color: 	#ADD8E6;
+    background-size:cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  }
+
+  .showcase p{
+    color: black;
+  }
+  .showcase li{
+    color: blue;
+  }
+  .header{
+    display: grid;
+    grid-gap:20px;
+  }
+  table {
+    background: #fff;
+    margin-bottom: 1.25em;
+    border: 1px solid #ddd;
+    box-shadow: -10px 10px 20px -2px #888;
+    -webkit-box-shadow: -10px 10px 20px -2px #888;
+    -moz-box-shadow: -10px 10px 20px -2px #888;
+    color: blue;
+  }
+  tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+  }
+  #one{
+    font-size: 1.4rem;
+  }
+  #draggable { width: 350px; height: 200px; padding: 0.5em; }
+  .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+  position:initial;
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+}
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+    $( "#draggable2" ).draggable();
+    $( "#draggable3" ).draggable();
+    $( "#draggable4" ).draggable();
+    $( "#draggable5" ).draggable();
+    $( "#draggable6" ).draggable();
+    $( "#draggable7" ).draggable();
+  } );
+  </script>
+</head>
+<body>
+<header class="showcase">
+<div class="sticky">
+<button class="btn"><i class="fa fa-home"></i><a href="anxietyProcess.html">Anxiety Page</a></button></div>
+
+<div id="draggable" class="ui-widget-content">
+  <table border="0">
+    <tbody>
+      <tr>
+        <td>
+            <h3>Talking treatments</h3>
+            <p>Talking treatments provide a regular time and space for you to talk about your thoughts
+              and experiences and explore difficult feelings with a trained professional.
+               This could help you to:</p>
+            <ul>
+              <li>deal with a specific problem</li>
+              <li>cope with upsetting memories or experiences</li>
+              <li>improve your relationships</li>
+              <li>develop more helpful ways of living day-to-day.</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<div id="draggable2" class="ui-widget-content">
+  <table border="0">
+    <tbody>
+      <tr>
+        <td>
+          <h3>Cognitive behavioural therapy (CBT)</h3>
+          <p>If you’re referred for therapy , you're likely to be offered a type of talking treatment
+            called cognitive behavioural therapy (CBT). </p>
+          <p>CBT is a relatively short-term treatment which aims
+             to identify connections between your thoughts, feelings and behaviours, and </p>
+          <p>to help you develop
+              practical skills to manage any negative patterns that may be causing you difficulties.</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+<div id="draggable3" class="ui-widget-content">
+  <table border="0">
+    <tbody>
+      <tr>
+        <td>
+          <h3>Medication</h3>
+          <p>The most common type of treatment available is psychiatric medication.</p>
+          <p>These drugs don’t cure mental health problems, but they can ease many symptoms</p>
+          <p>Which type of drug you are offered will depend on your diagnosis. For example:.</p>
+          <ul>
+            <li>Antidepressants</li>
+            <li>Antipsychotics</li>
+            <li>Sleeping pills and minor tranquillisers</li>
+            <li>Mood stabilisers (including lithium)</li>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="draggable4" class="ui-widget-content">
+  <table border="0">
+    <tbody>
+      <tr>
+        <td>
+          <h3>Arts and creative therapies</h3>
+          <p>Arts and creative therapies are a way of using the arts
+             (music, painting, dance or drama) to express and understand yourself in a therapeutic environment,
+             with a trained therapist. This can be especially helpful if you find it difficult to talk about your
+              problems and how you are feeling.
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="draggable5" class="ui-widget-content">
+  <table border="0">
+    <tbody>
+      <tr>
+        <td>
+          <h3>Complementary and alternative therapies</h3>
+          <p>Some people find complementary and alternative therapies helpful </p>
+          <p>to manage stress and other common symptoms of mental health problems.</p>
+          <p> These can include things like yoga, meditation, aromatherapy, hypnotherapy, herbal remedies and acupuncture.</p>
+          <p>The clinical evidence for these options is not as robust as it is for other treatments, but you may find they work for you.
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="draggable6" class="ui-widget-content">
+  <table border="0">
+    <tbody>
+      <tr>
+        <td>
+          <h3>Correct breathing techniques</h3>
+          <p>The physical symptoms of anxiety may be triggered by hyperventilation</p>
+          <p>which raises oxygen levels and reduces the amount of carbon dioxide in the blood.</p>
+          <p>Carbon dioxide assists in the regulation of the body’s reaction to anxiety and panic.
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="draggable7" class="ui-widget-content">
+  <table border="0">
+    <tbody>
+      <tr>
+        <td>
+          <h3>Dietary adjustments</h3>
+          <p>The mineral magnesium helps muscle tissue to relax,</p>
+          <p>and a magnesium deficiency can contribute to anxiety, depression and insomnia.</p>
+          <p>Inadequate intake of vitamin B and calcium can also exacerbate anxiety symptoms.</p>
+          <p>Make sure your daily diet includes foods such as wholegrain cereals,</p>
+          <p>leafy green vegetables and low-fat dairy products. </p>
+          <p>Nicotine, caffeine and stimulant drugs (such as those that contain caffeine)</p>
+          <p>trigger your adrenal glands to release adrenaline, which is one of the main stress chemicals.</p>
+          <p>These are best avoided.
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</header>
+
+
+</body>
+</html>

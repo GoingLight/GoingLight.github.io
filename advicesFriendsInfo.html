@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Advices for family and friends</title>
+    <style>
+    .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+
+  .accordion p{
+    font-size: 14px;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ADD8E6;
+  }
+
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2212";
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+  }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="sticky">
+    <button class="btn"><i class="fa fa-home"></i><a href="anxietyProcess.html">Anxiety Page</a></button></div>
+    <button class="accordion">Show your support</button>
+    <div class="panel">
+      <p>It can be very difficult to see someone who you care about becoming unwell,
+         but you don’t need to be an expert on mental health to offer support. Often small,
+         everyday actions can make the biggest difference.</p>
+    </div>
+
+    <button class="accordion">Ask how you can help</button>
+    <div class="panel">
+      <p>Everyone will want support at different times and in different ways, so ask how you can help.
+        It might be useful to help keep track of medication, or give support at a doctor’s appointment.
+        If your friend wants to get more exercise, you could do this together, or
+        if your partner is affected by lack of sleep, you could help them get into a regular sleeping pattern.</p>
+    </div>
+
+    <button class="accordion">Be open-minded</button>
+    <div class="panel">
+      <p>Phrases like 'cheer up’, ‘I’m sure it’ll pass’ and ‘pull yourself together’
+        definitely don’t help. Try to be non-judgemental and listen.
+        Someone experiencing a mental health problem often knows best what's helpful for them.</p>
+    </div>
+
+    <button class="accordion">Don’t just talk about mental health</button>
+    <div class="panel">
+      <p>Keep in mind that having a mental health problem is just
+        one aspect of your friend or family member's life. Most people don’t want to be defined by their mental
+         health problem, so keep talking about the things you've always talked about together</p>
+    </div>
+
+    <button class="accordion">Show trust and respect</button>
+    <div class="panel">
+      <p>Trust and respect between you and your friend or family member are very important –
+        they help to rebuild and maintain a sense of self-esteem,
+        which a mental health problem can seriously damage.
+        This can also help you to cope a bit better if you can see your support
+         having a positive impact on the person you care about.</p>
+    </div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+      for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+  });
+}
+</script>
+
+  </body>
+</html>
